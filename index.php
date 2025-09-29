@@ -37,8 +37,6 @@ Wensen:
 
 <?php
 
-echo $_POST['lp'];
-
 if (!empty($_POST['lp'])) {
 
 $url = 'https://opendata.rdw.nl/resource/m9d7-ebf2.json?kenteken='.strtoupper($_POST['lp']);
