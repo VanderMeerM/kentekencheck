@@ -39,7 +39,7 @@ Wensen:
 
 if (!empty($_POST['lp'])) {
 
-$url = 'https://opendata.rdw.nl/resource/m9d7-ebf2.json?kenteken='.strtoupper($_POST['lp']);
+$url = 'http://opendata.rdw.nl/resource/m9d7-ebf2.json?kenteken='.strtoupper($_POST['lp']);
 
 $curl = curl_init();
 
@@ -51,7 +51,7 @@ curl_setopt_array($curl, array(
   CURLOPT_TIMEOUT => 0,
   CURLOPT_FOLLOWLOCATION => true,
   CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-  CURLOPT_CUSTOMREQUEST => 'GET'
+  CURLOPT_CUSTOMREQUEST => 'GET',
   
 ));
 
